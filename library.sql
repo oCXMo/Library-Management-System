@@ -51,7 +51,8 @@ CREATE TABLE book (
 INSERT INTO book VALUES 
     (1, '0393347095', 'The Metamorphosis', 'Novella', 'Franz Kafka', 2014, 2, 128, 4.4),
     (2, '0439358078', 'Harry Potter And The Order Of The Phoenix', 'Fantasy', 'J.K. Rowling', 2004, 3, 896, 4.2),
-    (3, '0198800533', 'Anna Karenina', 'Realist Novel', 'Leo Tolstoy', 2017, 1, 896, 4.6);
+    (3, '0198800533', 'Anna Karenina', 'Realist Novel', 'Leo Tolstoy', 2017, 1, 896, 4.6)
+;
 
 
 
@@ -141,19 +142,41 @@ INSERT INTO staff VALUES
     (2, 'Ashley Miller', 'Female', '1995-01-16')
 ;
 
-update_staff_inf = "UPDATE staff SET 
+--
+--Replacing information with what exists in the table: Ashley Miller -> Ashley Bailey
+--
+
+UPDATE staff SET 
 full_name = 'Ashley Bailey' 
 WHERE full_name = 'Ashley Miller'
-;"
+;
 
-update_operation_inf = "UPDATE operation SET 
+--
+--Updating return date and the returned column to true for transaction
+--
+
+UPDATE operation SET 
 return_date = DATE('now'), 
 return_indicator = 1 
 WHERE student_id = 3
-;"
+;
 
-update_book_inf = "UPDATE book SET
+
+--
+--Adding one more book to the available "The Metamorphosis" accordingly
+--
+
+UPDATE book SET
 book_count = book_count + 1 
-WHERE book_name = 'The Metamorphosis';"
+WHERE book_name = 'The Metamorphosis';
 
-student_inf = "SELECT full_name FROM student JOIN operation on student.id=operation.student_id where operation.book_id=2 order by student.full_name asc;"
+
+--
+-- Finding the names of the students who bought the book with id = 2
+--
+
+SELECT full_name 
+FROM student 
+JOIN operation on student.id=operation.student_id 
+where operation.book_id=2 
+order by student.full_name asc;"
