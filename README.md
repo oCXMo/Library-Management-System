@@ -9,17 +9,3 @@
 --The operation table includes information about transactions that have occurred: who issued the book and to whom, and the date of issue (iss_date), as well as the --planned return date (return_date) and the return indicator (return_indicator, issued — 0, returned — 1).
 
 
-
-
-
-
-
--- DataGrip
--- version 2021.2.4
---Host: localhost
--- Generation Time: Nov 1, 2022 at 10:47 PM
-
-CREATE DATABASE IF NOT EXISTS `library` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `library`;
-
--- ----------------------
