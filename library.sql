@@ -179,4 +179,4 @@ SELECT full_name
 FROM student 
 JOIN operation on student.id=operation.student_id 
 where operation.book_id=2 
-order by student.full_name asc;"
+order by student.full_name asc;
