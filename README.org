@@ -21,55 +21,45 @@ The document also includes basic instructions if one wants to modify the program
  + The table book contains information about all the books in the library: title, author's name, genre, number of pages and year of publication, rating, and how many books are available.
  + The student and staff tables include information about the employees who issue books and readers.
  + The operation table includes information about transactions that have occurred: who issued the book and to whom, and the date of issue (iss_date), as well as the planned return date (return_date) and the return indicator (return_indicator, issued — 0, returned — 1).
-  + To Build a Library management system that is easy to use and provides a hassel free experience
-- Built with [[https://www.python.org/][Python]] and [[https://www.qt.io/][QT Framework]]
-  + Python Modules:
-    * wheel
-    * pyqt5
-    * pymysql
-    * xlrd
-    * xlsxwriter
-    * datetime
+ + To Build a Library management system that is easy to use and provides a hassel free experience
+
 - MySQL Database Hosted on [[https://clever-cloud.com/en/][Clever Cloud]] with IP Authentication
 *** Releases
 - Pre-Alpha:
 
 ** Features
-*** Main system
-  - Login Page
-  - Users
-  - Add Users (Signup)
-  - Add a Book
-  - Edit Book Info
-  - Delete Book
-  - Categories
-  - Settings [Categs, Author, Publisher]
-  - Day To Day Transaction Log
-  - Reports [Excel Files]
 
-*** Book
-  - Title
+*** Book Table
+  - ID
   - ISBN Code
-  - Description
-  - Category
-  - Price
+  - Book Name
+  - Genre
   - Author
-  - Publisher
+  - Book Year
+  - Book Count
+  - Book Page
+  - Rank
 
-*** Admin
-  - User Name
-  - Password
-  - Email Id
-
-*** Client / Students
-  - Username
+*** Operation
+  - ID
   - Student ID
-  - Email ID
+  - Staff ID
+  - Book ID
+  - Issue Date
+  - Return Date
+  - Return Indicator
 
-*** Day-to-Day
-  - Book name
-  - Type (Issue / Return)
-  - Duration (weeks)
+*** Student
+  - ID
+  - Full Name
+  - Gender
+  - Date of Birth
+
+*** Staff
+  - ID
+  - Full Name
+  - Gender
+  -Date of Birth
 
 *** Category, Publisher, Author
   - Names
