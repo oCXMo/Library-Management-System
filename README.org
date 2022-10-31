@@ -7,7 +7,7 @@
 
 *Name:* Library Management system
 
-*Version:* 1.4
+*Version:* 2021.4.2
 
 [[https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg]] [[https://forthebadge.com/images/badges/0-percent-optimized.svg]] [[https://forthebadge.com/images/badges/designed-in-etch-a-sketch.svg]]
 
@@ -27,7 +27,6 @@ We need to store a lot of information in the library database: return dates, mem
  + The operation table includes information about transactions that have occurred: who issued the book and to whom, and the date of issue (iss_date), as well as the planned return date (return_date) and the return indicator (return_indicator, issued — 0, returned — 1).
  + To Build a Library management system that is easy to use and provides a hassel free experience
 
-- MySQL Database Hosted on [[https://clever-cloud.com/en/][Clever Cloud]] with IP Authentication
 *** Releases
 - Pre-Alpha:
 
