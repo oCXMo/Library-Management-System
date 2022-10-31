@@ -16,6 +16,10 @@
 Following is a document listing the features of a Library Management System that was built after being frustrated by the manual handling of data at the local library. The features include a system to manage a database of books, Students and Staff, and the ability to modify, sort and export relevant data.
 The document also includes basic instructions if one wants to modify the program
 
+** Description
+We need to store a lot of information in the library database: return dates, members' names, books available, and much more. For this purpose, we should create tables and match their columns with the correct data types.
+
+
 ** Objective
 
  + The table book contains information about all the books in the library: title, author's name, genre, number of pages and year of publication, rating, and how many books are available.
@@ -59,15 +63,10 @@ The document also includes basic instructions if one wants to modify the program
   - ID
   - Full Name
   - Gender
-  -Date of Birth
-
-*** Category, Publisher, Author
-  - Names
-  - List
+  - Date of Birth
 
 ** Future Prospects
 - WebApp
-- Integrate barcode scanning
 - Ability to select local or cloud database
 
 ** Resources
